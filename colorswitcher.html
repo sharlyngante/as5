@@ -8,6 +8,7 @@
 
     <button id="white">White</button>
     <button id="black">Black</button>
+    <button id ="blue">Blue</button>
     <button id="random">Random</button>
     
     <script>
@@ -21,6 +22,15 @@
         let black = document.getElementById("black");
         black.addEventListener("click", switchToBlack);
 
+
+        function switchToBlue()
+        {
+            let body_element = document.getElementById("body_element");
+            body_element.style = "background-color:blue";
+        }
+
+        let blue = document.getElementById("blue");
+        black.addEventListener("click", switchToBlue);
 
         function switchToWhite()
         {
